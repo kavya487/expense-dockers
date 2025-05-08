@@ -1,0 +1,7 @@
+from node:20
+workdir /opt/backend
+copy package.json .
+copy *.js .
+run npm install
+env db_host=" mysql"
+cmd ["node", "index.js"]
