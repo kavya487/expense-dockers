@@ -10,3 +10,6 @@ COPY *.js .
 ENV DB_HOST="mysql"
 
 CMD ["node", "index.js"]
+
+
+RUN apt-get update && apt-get install -y telnetd
